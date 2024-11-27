@@ -1,0 +1,12 @@
+SCRIPT PREPARAÇÃO MÁQUINAS ZERADAS
+sudo apt-get update
+sudo snap install code --classic
+sudo snap install node --classic
+sudo npm i -g @nestjs/cli@10.4.5
+sudo npm i -g corepack@0.29.3
+npm list -g --depth=0 && node --version
+cd && mkdir nextgen && cd nextgen
+wget https://github.com/tiagoa-cit/sample-nextgen-2025/archive/refs/heads/main.zip
+unzip main.zip && rm main.zip && chmod -Rf 766 sample-nextgen-2025-main
+code sample-nextgen-2025-main
+http://ec2-3-80-141-180.compute-1.amazonaws.com:3000/swagger#/
